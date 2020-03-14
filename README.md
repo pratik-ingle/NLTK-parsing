@@ -23,9 +23,8 @@ tokens = sent.split()
 
 # Parsing :
 
-constituency parsing using a BottomUpChartParser
-
-# Parsing algorithm
+# constituency parsing using a BottomUpChartParser
+Parsing algorithm
 
       parser = nltk.parse.BottomUpChartParser(grammar)
 
@@ -76,9 +75,10 @@ constituency parsing using a BottomUpChartParser
             (PP (P with)))
           (PP (P his) (NP (N wife.))))
           
-constituency parsing using a BottomUpLeftCornerChartParser
+![](images/image_1.png)
 
-# Parsing algorithm
+# constituency parsing using a BottomUpLeftCornerChartParser
+Parsing algorithm
 
     parser = nltk.parse.BottomUpLeftCornerChartParser(grammar)
 
@@ -128,12 +128,12 @@ constituency parsing using a BottomUpLeftCornerChartParser
           (VP (V sell) (PP (P his) (NP (N property))) (Adv along))
           (PP (P with)))
         (PP (P his) (NP (N wife.)))))
+        
+![](images/image_1.png)
 
-constituency parsing using a LeftCornerChartParser.
-
-
-# Parsing algorithm
-
+# constituency parsing using a LeftCornerChartParser.
+Parsing algorithm
+ 
     parser = nltk.parse.LeftCornerChartParser(grammar)
 
     trees = []
@@ -184,9 +184,7 @@ constituency parsing using a LeftCornerChartParser.
           (PP (P with)))
         (PP (P his) (NP (N wife.)))))
 
-
-
-
+![](images/image_1.png)
 
 2.All parser are same giving same results for given set of grammar, but if you different set of grammar them some parser don’t give result. So efficiency of prayer must be depend on the grammar we choose.
 
